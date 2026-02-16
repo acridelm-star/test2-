@@ -1,5 +1,11 @@
 #include <fstream>
-//HINT: COMPLETE THE INCLUDE STATEMENT
+#include "system.h"
+#include "disk.h"
+#include <iostream>
+#include <vector>
+#include <string>
+#include <random>
+#include <cmath>
 
 System::System(int N, double displacement,double radius, double boxSize, int seed) {
 
@@ -52,7 +58,12 @@ void System::enforceBoundaries(Disk & disk) {
         if (disk.y > boxSize) disk.y = boxSize;
     }
 
-// HINT: PROVIDE A DEFINITION FOR A MEMBER FUNCTION OF THE SYSTEM CLASS CALLED uniform
+// provided a definition for uniform in which a random number is generated between the min and max values provided 
+double System::uniform (double min, double max) {
+    dist = std::uniform_real_distribution<double>(min, max);
+    return dist(gen);
+}
+
 
 void System::save(const std::string &filename){
     // save state of disks to file

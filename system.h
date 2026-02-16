@@ -28,4 +28,4 @@ public:
     double uniform( double min, double max) ;
 };
 
-#endif // SYSTEM_H
+#endif // !SYSTEM_H
