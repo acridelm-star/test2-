@@ -11,7 +11,7 @@ void Disk::move(double dx, double dy){
     this->x += dx;
     this->y += dy;
 }
-
+// calculate the euclidean distance between the disks
 double Disk::distance(Disk& other){
 
     double dx = this->x - other.x;
