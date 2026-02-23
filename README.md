@@ -4,9 +4,9 @@
 
 Reconstructed "disk.h" and "system.h" using the code provided in the refman documentation making sure to include header guards.
 Modified all .cpp files so that they contained the required headers. 
-Completed the code for both disk.cpp and system.cpp
-    - For disk this involved finishing the code to calculate the distance between disk and disk other, this was done by calculating the euclidean distance between them 
-    - For system this included providing a definition for the uniform function in which a random number is generated between two points 
+Completed the code for both disk.cpp and system.cpp \
+    - For disk this involved finishing the code to calculate the distance between disk and disk other, this was done by calculating the euclidean distance between them \
+    - For system this included providing a definition for the uniform function in which a random number is generated between two points \
 
 At this point the code had been fixed and could be compiled 
 
@@ -16,11 +16,11 @@ The code was, and can be compiled by inputting " g++ main.cpp disk.cpp system.cp
 
 ### Introduction of a Makefile
 
-To simplify compilation, a Makefile was constructed
-    In the terminal the following commands can be ran 
-        - make clean : removes the old simulation as well as old object files 
-        - make : compiles the files and produces "simulation"
-        - make run : creates "simulation" if needed and runs "simulation"
+To simplify compilation, a Makefile was constructed \
+    In the terminal the following commands can be ran  \
+        - make clean : removes the old simulation as well as old object files \
+        - make : compiles the files and produces "simulation" \
+        - make run : creates "simulation" if needed and runs "simulation" \
 
 ## Visualisation 
 
