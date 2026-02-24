@@ -20,7 +20,7 @@ To simplify compilation, a Makefile was constructed \
     In the terminal the following commands can be ran  \
         - make clean : removes the old simulation as well as old object files \
         - make : compiles the files and produces "simulation" \
-        - make run : creates "simulation" if needed and runs "simulation" \
+        - make run : creates "simulation" if needed and runs "simulation" 
 
 ## Visualisation 
 
@@ -31,6 +31,7 @@ The model can be viewed by typing "python3 view.py" in the terminal after "simul
     - The model visualises without any crashes 
     - The model successfully visualises 10,000 simulations with the disks starting on the left hand side of the box and slowly dispersing out 
     - The model does not allow the disks to overlap and this can clearly be seen in the visualisation 
+    - Originally upon creation of the animation the animation would run for a few frames before buffering and then continuing a few seconds later, i do not kno why this is, however modifying the animation function to have a 200 millisecond interval seems to make the animation better, it still occasionally buffers but it is far more viewable and better shows the disk movement
 
 ## Comments on Git
 Commits to git were often done incremently after a "task" was complete,
